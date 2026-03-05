@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-color: black;
+    margin: 16px;
+}
+td, th, caption {
+    border: solid;
+    border-width: 1px;
+    padding: 1px 5px;
+}
+caption {
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.table-wekend {
+    border-color: black;    
+    color: rgb(223, 0, 0);
+}
