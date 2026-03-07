@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form class="pd-form">
+			<fieldset class="pd-fieldset">
+				<h2 class="form-header">Ваши личные данные</h2>
+				<label>
+					Ваше имя
+					<input
+						class="input-text"
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Иван"
+						required
+					/>
+				</label>
+				<label
+					>Ваш возраст
+					<input
+						class="input-text"
+						type="text"
+						name="age"
+						id="age"
+						placeholder="18"
+						required
+					/>
+				</label>
+				<label
+					>Ваш номер телефона
+					<input
+						class="input-text"
+						type="tel"
+						inputmode="numeric"
+						name="tel"
+						id="tel"
+						placeholder="9990999090"
+						required
+					/>
+				</label>
+				<label
+					>Ваша почта
+					<input
+						class="input-text"
+						type="email"
+						name="email"
+						id="email"
+						placeholder="name@gmail.com"
+						required
+					/>
+				</label>
+			</fieldset>
+			<fieldset class="pd-fieldset">
+				<label
+					>Сообщение
+					<textarea
+						class="input-textarea"
+						name="message"
+						id="msg"
+						required
+						placeholder="Ваше сообщение"
+					></textarea>
+				</label>
+				<label>
+					<input
+						class="input-checkbox"
+						type="checkbox"
+						name="accept"
+						id="acpt"
+						required
+					/>
+					Я принимаю условия
+					<a href="#" class="form-link">политики конфиденциальности</a>
+				</label>
+			</fieldset>
+			<button type="submit" class="submit-button">Отправить</button>
+		</form>
+	</body>
+</html>
