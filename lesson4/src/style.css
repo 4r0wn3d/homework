@@ -7,7 +7,7 @@ body {
     border-radius: 15px;
     padding: 20px;
     padding-bottom: 16px;
-    display: inline-block;
+    width: 380px;
 }
 
 .pd-fieldset {
@@ -67,4 +67,5 @@ label {
     
     
     margin-top: 14px;
+
 }
