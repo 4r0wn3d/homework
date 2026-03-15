@@ -1,0 +1,124 @@
+body {
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+* {
+	box-sizing: border-box;
+}
+*:focus-visible {
+	outline: 2px solid #9e1fff;
+}
+.pd-form {
+	border: solid 2px gray;
+	border-radius: 15px;
+	padding: 20px;
+	padding-bottom: 16px;
+	display: inline-block;
+	max-width: 400px;
+	width: 100%;
+}
+
+.pd-fieldset {
+	border: none;
+	max-width: auto;
+	margin: 0;
+	display: block;
+	padding: 0;
+}
+.form-header {
+	font-size: 18px;
+	margin-top: 0;
+}
+.input-text {
+	max-height: 24px;
+	padding: 16px 14px;
+}
+.input-text,
+.input-textarea {
+	display: block;
+
+	border-radius: 5px;
+	max-width: 380px;
+	width: 100%;
+	margin-top: 2px;
+}
+.input-text:last-child {
+	margin-bottom: 0;
+}
+.input-textarea {
+	resize: vertical;
+	max-height: 180px;
+	min-height: 38px;
+
+	padding: 8px 14px;
+}
+.input-checkbox {
+	appearance: none;
+	position: absolute;
+	outline: none;
+}
+.input-checkbox::after {
+	cursor: pointer;
+	position: absolute;
+	content: "";
+	width: 16px;
+	height: 16px;
+	border: 1px solid #333;
+	border-radius: 4px;
+	margin-left: -22px;
+}
+.input-checkbox:checked::after {
+	background:
+		url("../img/check-icon.svg") no-repeat center,
+		#9e1fff;
+}
+.label-checkbox {
+	padding-left: 22px;
+}
+.form-link {
+	text-decoration: none;
+	color: rgb(26, 144, 255);
+}
+.submit-button {
+	display: block;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 6px 18px;
+	background-color: #9e1fff;
+	color: white;
+	font-size: 16px;
+	margin-top: 14px;
+	transition: opacity 0.2s;
+}
+
+.submit-button:hover {
+	opacity: 0.87;
+}
+.submit-button:focus-visible,
+.input-checkbox:focus-visible::after {
+	outline: 2px solid #9e1fff;
+	outline-offset: 1px;
+}
+.form-link:focus-visible {
+	outline: none;
+}
+.submit-button:not(:disabled):active {
+	background-color: #6b16ac;
+}
+.submit-button:disabled,
+.input-text:disabled,
+.input-textarea:disabled,
+.input-checkbox:disabled::after {
+	opacity: 0.5;
+	cursor: default;
+}
+
+label {
+	display: block;
+
+	margin-top: 14px;
+}
