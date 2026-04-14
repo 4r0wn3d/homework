@@ -1,0 +1,387 @@
+<!doctype html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+		/>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+			defer
+		></script>
+		<script defer src="./js/index.js" type="module"></script>
+		<link
+			rel="shortcut icon"
+			href="./icons/nike-favicon-48x48.ico"
+			type="image/x-icon"
+		/>
+		<title>Nike Air Mag</title>
+	</head>
+	<body class="page__body">
+		<header class="header">
+			<div class="container header__container">
+				<a href="/" class="logo header__logo">
+					<img
+						class="logo__img"
+						src="./icons/logo-icon.svg"
+						alt="Логотип Nike"
+						width="50"
+						height="20"
+				/></a>
+				<nav
+					class="menu header__menu"
+					id="header__menu"
+					aria-label="Главное меню"
+				>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#sizes">Размеры</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#characteristics">Характеристики</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#other-models">Другие ТОП модели</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__controls">
+					<a href="#" class="header__order">Сделать заказ</a>
+					<div class="header__actions">
+						<button
+							href="#"
+							class="header__actions-button"
+							aria-label="Поиск"
+							title="Поиск"
+						>
+							<svg width="24" height="24">
+								<use
+									class="header__actions-icon"
+									href="./icons/sprite.svg#search"
+								></use>
+							</svg>
+						</button>
+						<button
+							href="#"
+							class="header__actions-button"
+							aria-label="Корзина"
+							title="Корзина"
+						>
+							<svg width="24" height="24">
+								<use
+									class="header__actions-icon"
+									href="./icons/sprite.svg#cart"
+								></use>
+							</svg>
+						</button>
+						<button
+							href="#"
+							class="header__burger burger"
+							aria-label="Открыть меню"
+							aria-expanded="false"
+							aria-controls="#header__menu"
+							title="Меню"
+						>
+							<svg width="24" height="24">
+								<use
+									class="burger__icon-menu"
+									href="./icons/sprite.svg#menu-burger"
+								></use>
+								<use
+									class="burger__icon-cross"
+									href="./icons/sprite.svg#menu-cross"
+								></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container hero__container">
+					<header class="hero__header">
+						<ul class="hero__benefits-list">
+							<li class="hero__benefits-item">Стиль</li>
+							<li class="hero__benefits-item">Скорость</li>
+						</ul>
+						<h1 class="hero__title">
+							Nike <span class="hero__title-accent">air</span> mag
+						</h1>
+					</header>
+					<picture>
+						<source srcset="./img/nike-air-mag-1.webp" type="image/webp" />
+						<img
+							class="hero__img"
+							src="./img/nike-air-mag-1.png"
+							width="846"
+							height="713"
+							alt="Кроссовки Nike air mag"
+					/></picture>
+					<footer class="hero__footer">
+						<a href="#" class="hero__details"
+							>Подробнее
+							<svg width="24" height="24">
+								<use
+									class="hero__details-icon"
+									href="./icons/main-sprite.svg#arrows-right"
+								></use>
+							</svg>
+						</a>
+					</footer>
+				</div>
+			</section>
+			<section id="air-mag" class="air-mag">
+				<div class="container">
+					<h2 class="title title-md air-mag__title">Air Mag</h2>
+					<p class="air-mag__description text-regular">
+						Это не просто кроссовки — это шаг в будущее. С уникальным дизайном и
+						передовыми технологиями, эти кроссовки вдохновлены легендарной
+						киноделией и готовы сопровождать вас в любых приключениях.
+					</p>
+					<div class="air-mag__info-wrapper">
+						<picture>
+							<source srcset="./img/nike-air-mag-2.webp" type="image/webp" />
+							<img
+								src="./img/nike-air-mag-2.png"
+								alt="Кроссовки Nike air mag с видом сбоку"
+								class="air-mag__img"
+								width="911"
+								height="635"
+								loading="lazy"
+							/>
+						</picture>
+						<ul class="air-mag__list">
+							<li class="air-mag__item text-light">
+								инновационная технология амортизации, которая обеспечивает
+								непревзойденную поддержу суставов
+							</li>
+							<li class="air-mag__item text-light">
+								высококачественные синтетические материалы для долговечности
+								и комфорта
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="sizes section" id="sizes">
+				<div class="container">
+					<h2 class="title title-md product__title">размеры</h2>
+					<section class="product">
+						<div class="product__slider-wrapper">
+							<button
+								class="product__slider-button product__slider-button--prev"
+								aria-label="Предыдущий слайд"
+							>
+								<svg width="40" height="40">
+									<use
+										class="product__slider-button-icon"
+										href="./icons/main-sprite.svg#double-arrows"
+									></use>
+								</svg>
+							</button>
+							<div class="swiper product__slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide product__slide">
+										<div class="product__slide-inner">
+											<picture>
+												<source
+													srcset="./img/product-slides/product-air-mag-1.webp"
+													type="image/webp"
+												/>
+												<img
+													src="./img/product-slides/product-air-mag-1.png"
+													alt="Кроссовки nike air mag вид спереди"
+													width="357"
+													height="375"
+													class="product__slide-img"
+												/>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product__slide">
+										<div class="product__slide-inner">
+											<picture>
+												<source
+													srcset="./img/product-slides/product-air-mag-2.webp"
+													type="image/webp"
+												/>
+												<img
+													src="./img/product-slides/product-air-mag-2.png"
+													alt="Кроссовки nike air mag вид сзади"
+													width="408"
+													height="375"
+													class="product__slide-img"
+												/>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product__slide">
+										<div class="product__slide-inner">
+											<picture>
+												<source
+													srcset="./img/product-slides/product-air-mag-3.webp"
+													type="image/webp"
+												/>
+												<img
+													src="./img/product-slides/product-air-mag-3.png"
+													alt="Кроссовки nike air mag вид сбоку"
+													width="442"
+													height="375"
+													class="product__slide-img"
+												/>
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button
+								class="product__slider-button product__slider-button--next"
+								aria-label="Следующий слайд"
+							>
+								<svg width="40" height="40">
+									<use
+										class="product__slider-button-icon"
+										href="./icons/main-sprite.svg#double-arrows"
+									></use>
+								</svg>
+							</button>
+						</div>
+
+						<h3 class="product__title title title-sm">
+							Кроссовки
+							<strong class="product__title--accent" lang="en"
+								>Nike Air Mag</strong
+							>
+							Back To Future
+						</h3>
+						<p class="product__description text-light">
+							Nike Air Mag — это кусочек киноистории и технологического
+							прогресса. Если вы ищете уникальную пару кроссовок, которая станет
+							не только стильным аксессуаром, но и ценным дополнением вашей
+							коллекции, Nike Air Mag — идеальный выбор.
+						</p>
+						<p class="product__price title title-sm">36 490 ₽</p>
+						<div class="product__sizes-wrapper">
+							<section class="product__sizes">
+								<h4 class="product__sizes-title product__sizes-title--in-stock">
+									Размеры в наличии
+								</h4>
+								<ul class="product__sizes-list" data-sizes="list">
+									<li class="product__sizes-item">
+										<button
+											class="product__sizes-button"
+											aria-label="Выбрать размер"
+											title="Выбрать размер"
+											data-sizes="button"
+										>
+											38
+										</button>
+									</li>
+
+									<li class="product__sizes-item">
+										<button
+											class="product__sizes-button"
+											aria-label="Выбрать размер"
+											title="Выбрать размер"
+											data-sizes="button"
+										>
+											40
+										</button>
+									</li>
+									<li class="product__sizes-item">
+										<button
+											class="product__sizes-button"
+											aria-label="Выбрать размер"
+											title="Выбрать размер"
+											data-sizes="button"
+										>
+											41
+										</button>
+									</li>
+									<li class="product__sizes-item">
+										<button
+											class="product__sizes-button"
+											aria-label="Выбрать размер"
+											title="Выбрать размер"
+											data-sizes="button"
+										>
+											42
+										</button>
+									</li>
+									<li class="product__sizes-item">
+										<button
+											class="product__sizes-button"
+											aria-label="Выбрать размер"
+											title="Выбрать размер"
+											data-sizes="button"
+										>
+											44
+										</button>
+									</li>
+									<li class="product__sizes-item">
+										<button
+											class="product__sizes-button"
+											aria-label="Выбрать размер"
+											title="Выбрать размер"
+											data-sizes="button"
+										>
+											45
+										</button>
+									</li>
+								</ul>
+								<div class="product__buy-wrapper">
+									<button class="product__buy-button">Купить в 1 клик</button>
+									<button
+										class="product__cart-button"
+										title="Добавить в корзину"
+										aria-label="Добавить в корзину"
+									>
+										<img
+											src="./icons/cart-icon.svg"
+											width="23"
+											height="23"
+											alt="Корзина"
+											loading="lazy"
+										/>
+									</button>
+								</div>
+							</section>
+							<section class="product__sizes">
+								<h4 class="product__sizes-title product__sizes-title--to-order">
+									Размеры под заказ
+								</h4>
+								<ul class="product__sizes-list">
+									<li class="product__sizes-item">
+										<button class="product__sizes-button" disabled>36</button>
+									</li>
+									<li class="product__sizes-item">
+										<button class="product__sizes-button" disabled>37</button>
+									</li>
+									<li class="product__sizes-item">
+										<button class="product__sizes-button" disabled>43</button>
+									</li>
+									<li class="product__sizes-item">
+										<button class="product__sizes-button" disabled>46</button>
+									</li>
+									<li class="product__sizes-item">
+										<button class="product__sizes-button" disabled>47</button>
+									</li>
+								</ul>
+								<a href="#" class="product__order-link">Заказать размер</a>
+							</section>
+						</div>
+					</section>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
