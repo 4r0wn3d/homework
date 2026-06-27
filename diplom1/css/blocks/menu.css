@@ -1,0 +1,36 @@
+.menu {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	z-index: var(--layer-3);
+}
+
+.menu__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 24px;
+}
+.menu__link {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--main-color);
+}
+
+.menu__button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 4px;
+}
+@media (any-hover: hover) {
+	.menu__link:hover,
+	.menu__button:hover {
+		color: rgb(46, 46, 46);
+	}
+}

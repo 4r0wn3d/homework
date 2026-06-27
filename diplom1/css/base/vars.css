@@ -1,0 +1,24 @@
+:root {
+	--font-family: "Inter", sans-serif;
+	--second-family: "Arial", sans-serif;
+
+	--main-color: #000000;
+	--shadow-color: #00000027;
+	--transparent-color: #00000099;
+	--main-color-second: #ffffff;
+	--bg-color: #f0f0f0;
+	--secondary-color: #00000099;
+
+	--transition-time: 200ms;
+	--transition-time-buttons: 80ms;
+
+	--layer-negative: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+	--layer-4: 4;
+
+	--container-width: 1240px;
+	--container-padding: 16px;
+}
