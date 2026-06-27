@@ -263,6 +263,7 @@
 
 .hero__info-number {
 	font-weight: 700;
+	text-align: start;
 }
 .hero__info-text {
 	font-weight: 400;
