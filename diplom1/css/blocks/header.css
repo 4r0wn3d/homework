@@ -1,3 +1,27 @@
+.header {
+	position: fixed;
+	z-index: var(--layer-3);
+	background-color: var(--main-color-second);
+	top: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition: -webkit-box-shadow var(--transition-time);
+	transition: -webkit-box-shadow var(--transition-time);
+	transition: box-shadow var(--transition-time);
+	transition:
+		box-shadow var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
+	transition:
+		box-shadow var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
+}
+.header--fixed {
+	-webkit-box-shadow: 0 0 20px var(--shadow-color);
+	box-shadow: 0 5px 20px var(--shadow-color);
+	overflow-y: hidden;
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
 .register-discount {
 	padding-block: 10px 12px;
 	background-color: var(--main-color);
@@ -102,7 +126,7 @@
 
 		-webkit-box-shadow: 2px 20px 10px black;
 
-		box-shadow: 2px 20px 10px black;
+		box-shadow: 2px 20px 10px var(--shadow-color);
 		padding: 144px 15px 20px 15px;
 
 		opacity: 0;

@@ -3,6 +3,17 @@
 
 	overflow-y: hidden;
 	overflow-x: hidden;
+	margin-top: 134px;
+}
+@media (width > 1092px) {
+	.hero {
+		margin-top: 134px;
+	}
+}
+@media (width <= 1092px) {
+	.hero {
+		margin-top: 98px;
+	}
 }
 
 .hero__container {
@@ -342,14 +353,14 @@
 	}
 }
 
-.header__brands-wrapper {
+.hero__brands-wrapper {
 	background-color: var(--main-color);
 	padding-block: 40px;
 	position: relative;
 	z-index: var(--layer-2);
 }
 
-.header__brands-list {
+.hero__brands-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
