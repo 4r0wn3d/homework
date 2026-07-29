@@ -1,0 +1,117 @@
+.modal-register {
+	background-color: var(--bg-color);
+}
+@media (width > 576px) {
+	.modal-register {
+		width: min(800px, 80%);
+	}
+}
+
+.modal-register__content {
+	max-width: 448px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-register__title {
+	align-self: center;
+}
+
+@media (width > 576px) {
+	.modal-register__title {
+		margin-bottom: 56px;
+	}
+}
+
+@media (width <= 576px) {
+	.modal-register__title {
+		margin-bottom: 36px;
+	}
+}
+
+.modal-register__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.modal-register__label {
+	margin-bottom: 16px;
+}
+
+.modal-register__input {
+	display: inline-block;
+	width: 100%;
+	color: var(--main-color);
+	background-color: transparent;
+	border-radius: 20px;
+	border: 1px solid var(--transparent-color);
+}
+
+@media (width > 576px) {
+	.modal-register__input {
+		padding: 16px 20px;
+		font-size: 16px;
+	}
+}
+
+@media (width <= 576px) {
+	.modal-register__input {
+		padding: 14px 18px;
+		font-size: 14px;
+	}
+}
+
+.modal-register__input::placeholder {
+	color: var(--secondary-color);
+}
+
+.modal-register__submit {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 130%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--main-color-second);
+	border-radius: 60px;
+	background-color: var(--main-color);
+	-webkit-transition: -webkit-box-shadow var(--transition-time);
+	transition: -webkit-box-shadow var(--transition-time);
+	-o-transition: box-shadow var(--transition-time);
+	transition: background-color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.modal-register__submit:hover {
+		background-color: #000000cc;
+	}
+}
+
+@media (width > 576px) {
+	.modal-register__submit {
+		margin-top: 50px;
+		padding: 20px;
+	}
+}
+
+@media (width <= 576px) {
+	.modal-register__submit {
+		margin-top: 30px;
+		padding: 14px;
+	}
+}
